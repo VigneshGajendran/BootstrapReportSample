@@ -1,0 +1,86 @@
+<body>
+        <!--Main Navigation-->
+        <header>
+            <!-- Sidebar -->
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-3 mt-4">
+                        <a href="#Dashboard" class="list-group-item list-group-item-action py-2 ripple"> <i class="fas fa-tachometer-alt fa-fw me-3"></i> <span>Dashboard</span> </a>
+                        <a href="#Metrics" class="list-group-item list-group-item-action py-2 ripple"> <i class="fas fa-chart-area fa-fw me-3"></i> <span>Metrics</span> </a>
+                        <a href="#OverallReport" class="list-group-item list-group-item-action py-2 ripple"> <i class="fas fa-chart-line fa-fw me-3"></i> <span>Overall Weekly</span> </a>
+                        <a href="#Weekly" class="list-group-item list-group-item-action py-2 ripple"> <i class="fas fa-chart-pie fa-fw me-3"></i> <span>Weekly Split-Up</span> </a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Sidebar -->
+            <!-- Navbar -->
+            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Expleo Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Expleo_Group_Logo.svg/320px-Expleo_Group_Logo.svg.png" height="25" alt="" loading="lazy" />
+                    </a>
+                    <div class="card-header text-center">
+                        <h5 class="mb-1 text-center">
+                            <strong style="color: orange;">UB Online Banking Automation Summary</strong>
+                        </h5>
+                    </div>
+                    <!-- UB Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Unionbank_2018_logo.svg" height="35" alt="" loading="lazy" />
+                    </a>
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--Main Navigation-->
+        <!--Main layout-->
+        <main style="margin-top: 75px;">
+            <div class="container">
+                <!-- Section: Main chart -->
+                <span class="anchor" id=Dashboard></span>
+                <section class="mb-4" >
+                    <div class="card">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0 text-center">
+                                <strong>Regression Split Up's</strong>
+                            </h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <canvas id="Device" height="250"></canvas>
+                            </div>
+                            <div class="col-sm">
+                                <canvas id="Overall"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section: Main chart -->
+                <!--Section: Sales Performance KPIs-->
+                <span class="anchor" id=Metrics></span>
+                <section class="mb-4" >
+                    <div class="card">
+                        <div class="card-header text-center py-3">
+                            <h5 class="mb-0 text-center">
+                                <strong>Weekly Regression Metrics</strong>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Platform</th>
+                                            <th scope="col">Browser</th>
+                                            <th scope="col">Test Scenario</th>
+                                            <th scope="col">Test Steps</th>
+                                            <th scope="col">No of Scenario's Passed</th>
+                                            <th scope="col">No of Scenario's Failed</th>
+                                            <th scope="col">Passed %</th>
+                                            <th scope="col">Failed %</th>
+                                        </tr>
+                                    </thead>
+    
